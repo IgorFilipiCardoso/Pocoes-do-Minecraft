@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&family=Work+Sans:wght@500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    color: aliceblue;
+    background-image: url(images/background.jpg);
+    background-clip: border-box;
+    background-position: center;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(58, 58, 58, 0.719);
+    outline: 1px solid rgb(7, 7, 7);
+}
+
+.tudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+}
+
+#fundo{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.cabeca{
+    width: 100%;
+    height: 15%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.botoes{
+    margin-right: 120px;
+}
+
+.botoes ul{
+    display: flex;
+    gap: 40px;
+}
+
+.botoes li{
+    list-style: none;
+}
+
+.botoes a{
+    padding: 15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.logo_principal{
+    position: absolute;
+    left: 45px;
+}
+
+.logo_principal img{
+    width: 100px;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+}
+  
+main{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.com{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conhecimentos{
+    width: 50%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 40px;
+    color: aliceblue;
+}
+
+.conhecimentos h1{
+    font-size: 40px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.text{
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.cada_conhe{
+    display: flex;
+}
+
+.conhe_geral{
+    width: 200px;
+    height: 300px;
+    margin: 40px 10px 40px 10px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.conhecimentos img{
+    width: 150px;
+    border-radius: 20px;
+}
+
+.potions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.foto_descricao{
+    width: 150px;
+    height: 300px;
+    min-height: 300px;
+    min-width: 150px;
+    padding: 30px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.foto_descricao img{
+    width: 100px;
+    height: 100px;
+}
+
+.botao a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 8px;
+}
