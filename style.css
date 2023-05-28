@@ -234,8 +234,9 @@ main{
 
 
     .botoes{
-        visibility: hidden;
+        visibility: collapse;
         position: absolute;
+        font-size: 0px;
     }
 
     .cabeca{
@@ -262,6 +263,7 @@ main{
     }
     
     .botoes_pequenos ul{
+        padding: 0px;
         display: flex;
         gap: 5px;
     }
@@ -317,4 +319,15 @@ main{
         margin: 20px;
     }
 
+}
+
+@media (max-width: 350px){
+    .botoes_pequenos img{
+        width: 30px;
+        border-radius: 5px;
+    }
+
+    .conhe_geral{
+        height: 400px;
+    }
 }
