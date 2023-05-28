@@ -8,13 +8,38 @@
     <title>Poções do Minecraft</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="images/potions/poção_minecraft.png" type="image/x-icon">
+
+    <script>
+        $(function() {
+        function slideMenu() {
+            var activeState = $("#menu-container .menu-list").hasClass("active");
+            $("#menu-container .menu-list").animate({left: activeState ? "0%" : "-100%"}, 400);
+        }
+        $("#menu-wrapper").click(function(event) {
+            event.stopPropagation();
+            $("#hamburger-menu").toggleClass("open");
+            $("#menu-container .menu-list").toggleClass("active");
+            slideMenu();
+
+            $("body").toggleClass("overflow-hidden");
+        });
+
+        $(".menu-list").find(".accordion-toggle").click(function() {
+            $(this).next().toggleClass("open").slideToggle("fast");
+            $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+            $(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
+            $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
+        });
+        }); // jQuery load
+    </script>
 </head>
 
 <body>
     <div class="tudo">
         <header>
             <div id="fundo"></div>
-            <nav>
+            <nav class="navigation">
                 <section class="cabeca">
                     <div class="logo_principal">
                         <a href="../index.html"><img src="images/potions/poção_minecraft.png" alt="Poção Minecraft"></a>
@@ -22,9 +47,18 @@
                     <div class="botoes">
                         <ul>
                             <li><a href="pages/base_potions.html">Poções de base</a></li>
-                            <li><a href="pages/brewing_equipment.html">Equipamentos para fazer fermentação </a></li>
+                            <li><a href="pages/brewing_equipment.html">Equipamentos</a></li>
                             <li><a href="pages/brewing_potions.html">Fermentando poções</a></li>
                             <li><a href="pages/modifiers.html">Modificações</a></li>
+                        </ul>  
+                    </div>
+
+                    <div class="botoes_pequenos">
+                        <ul>
+                            <li><a href="pages/base_potions.html"><img src="images/potions/fire_resistence.png" alt=""></a></li>
+                            <li><a href="pages/brewing_equipment.html"><img src="images/equipments/brewing_stand.webp" alt=""></a></li>
+                            <li><a href="pages/brewing_potions.html"><img src="images/brewing_potions/interface.png" alt=""></a></li>
+                            <li><a href="pages/modifiers.html"><img src="images/itens/bafo_dragao.webp" alt=""></a></li>
                         </ul>
                     </div>
                 </section>
