@@ -69,16 +69,18 @@ header{
 }
 
 .botoes{
-    margin-right: 120px;
+    text-align: center;
 }
 
 .botoes ul{
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 .botoes li{
     list-style: none;
+    width: max-content;
 }
 
 .botoes a{
@@ -88,7 +90,7 @@ header{
 }
 
 .logo_principal{
-    margin-left: 30px;
+    margin-left: 2%;
 }
 
 .logo_principal img{
@@ -202,6 +204,14 @@ main{
 }
 
 @media (max-width: 1100px)  {
+
+    .logo_principal{
+        right: 0px;
+    }
+    
+    .logo_principal img{
+        width: 60px;
+    }
 
     .conhecimentos h1{
         font-size: 25px;
