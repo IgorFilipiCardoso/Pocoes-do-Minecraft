@@ -198,6 +198,7 @@ main{
     align-items: center;
     border-radius: 40px;
     background-color: rgba(0, 0, 0, 0.596);
+    color: aliceblue;
 }
 
 .foto_descricao img{
