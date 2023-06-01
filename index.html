@@ -8,31 +8,6 @@
     <title>Poções do Minecraft</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="images/potions/poção_minecraft.png" type="image/x-icon">
-
-    <script>
-        $(function() {
-        function slideMenu() {
-            var activeState = $("#menu-container .menu-list").hasClass("active");
-            $("#menu-container .menu-list").animate({left: activeState ? "0%" : "-100%"}, 400);
-        }
-        $("#menu-wrapper").click(function(event) {
-            event.stopPropagation();
-            $("#hamburger-menu").toggleClass("open");
-            $("#menu-container .menu-list").toggleClass("active");
-            slideMenu();
-
-            $("body").toggleClass("overflow-hidden");
-        });
-
-        $(".menu-list").find(".accordion-toggle").click(function() {
-            $(this).next().toggleClass("open").slideToggle("fast");
-            $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
-
-            $(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
-            $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
-        });
-        }); // jQuery load
-    </script>
 </head>
 
 <body>
@@ -141,7 +116,7 @@
                         <p>Poção de resistência ao fogo</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/fire_resistence.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -153,7 +128,7 @@
                         <p>Poção de regeneração</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/regeneration.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -165,7 +140,7 @@
                         <p>Poção de força</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/strength.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -177,7 +152,7 @@
                         <p>Poção de agilidade</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/swiftness.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -189,7 +164,7 @@
                         <p>Poção de visão noturna</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/night_vision.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -201,7 +176,7 @@
                         <p>Poção de respiração aquática</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/water_breathing.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -213,7 +188,7 @@
                         <p>Poção de supersalto</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/leaping.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -225,7 +200,7 @@
                         <p>Poção de queda lenta</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/slow_falling.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -237,7 +212,7 @@
                         <p>Poção de veneno</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/poison.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -249,7 +224,7 @@
                         <p>Poção de fraqueza</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/weakness.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -261,7 +236,7 @@
                         <p>Poção de dano</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/harming.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -273,7 +248,7 @@
                         <p>Poção de lentidão</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/slowness.html">Como fazer?</a></button>
                     </section>
                 </section>
     
@@ -285,7 +260,7 @@
                         <p>Poção do mestre-tartaruga</p>
                     </section>
                     <section class="botao">
-                        <button><a href="">Como fazer?</a></button>
+                        <button><a href="potions_pages/the_turtle_master.html">Como fazer?</a></button>
                     </section>
                 </section>
     
