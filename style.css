@@ -264,7 +264,6 @@ main{
 
     .cabeca{
         width: 100%;
-        height: 15%;
         z-index: 1;
         position: absolute;
         display: flex;
