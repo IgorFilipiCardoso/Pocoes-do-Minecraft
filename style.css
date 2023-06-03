@@ -94,13 +94,16 @@ header{
 
 .logo_principal a{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
     align-items: center;
     color: aliceblue;
     text-decoration: none;
 }
 
 .logo_principal img{
-    width: 14%;
+    width: 12%;
     height: auto;
 }
 
@@ -128,7 +131,7 @@ main{
 }
 
 .conhecimentos{
-    width: 50%;
+    width: 80%;
     height: fit-content;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -189,7 +192,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
 }
 
 .foto_descricao{
@@ -198,7 +200,7 @@ main{
     min-height: 300px;
     min-width: 150px;
     padding: 30px;
-    margin: 40px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,7 +316,7 @@ main{
     }
 
     .conhecimentos{
-        width: 80%;
+        width: 70%;
         height: fit-content;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -348,6 +350,27 @@ main{
         margin: 20px;
     }
 
+}
+
+@media (max-width: 660px){
+    .foto_descricao{
+        width: 80px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px){
+
+    .foto img{
+        width: 40px;
+        height: auto;
+    }
+    .foto_descricao{
+        font-size: 18px;
+        width: min-content;
+        height: 120px;
+        padding: 0;
+    }
 }
 
 @media (max-width: 350px){
