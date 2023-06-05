@@ -192,10 +192,13 @@ main{
 .potions{
     display: flex;
     flex-wrap: wrap;
+    max-width: 1200px;
     justify-content: center;
+    align-items: center;
 }
 
 .foto_descricao{
+    font-size: 15px;
     width: 130px;
     height: 230px;
     min-height: 200px;
