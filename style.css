@@ -195,7 +195,7 @@ main{
 }
 
 .foto_descricao{
-    width: 200px;
+    width: 400px;
     height: 320px;
     min-height: 300px;
     min-width: 150px;
@@ -374,12 +374,55 @@ main{
 }
 
 @media (max-width: 350px){
+
+    .conhecimentos{
+        width: 100%;
+        margin: 15px;
+        padding-bottom: 30px;
+        
+    }
+
+    .conhecimentos h1{
+        font-size: 20px;
+    }
+
+    .conhe_geral{
+        display: flex;
+        flex-direction: row;
+
+        min-height: unset;
+        min-width: unset;
+        margin: 5px;
+        height: 160px;
+        padding: 30px;
+        width: 40px;
+        font-size: 10px;
+    }
+
+    .conhe_geral p{
+        font-size: 10px;
+    }
+
+    .conhe_geral img{
+        width: 40px;
+    }
+
     .botoes_pequenos img{
         width: 30px;
         border-radius: 5px;
     }
 
-    .conhe_geral{
-        height: 400px;
+    .botao a{
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .foto_descricao{
+        margin: 5px;
+        font-size: 8px;
+        min-height: unset;
+        min-width: unset;
+        width: 100px;
+        height: 140px;
     }
 }
