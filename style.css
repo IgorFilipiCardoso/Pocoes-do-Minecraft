@@ -373,7 +373,7 @@ main{
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 475px){
 
     .conhecimentos{
         width: 100%;
@@ -389,11 +389,11 @@ main{
     .conhe_geral{
         display: flex;
         flex-direction: row;
-
         min-height: unset;
         min-width: unset;
+        border-radius: 25px;
         margin: 5px;
-        height: 160px;
+        height: 170px;
         padding: 30px;
         width: 40px;
         font-size: 10px;
@@ -424,5 +424,10 @@ main{
         min-width: unset;
         width: 100px;
         height: 140px;
+    }
+
+    .foto_descricao img{
+        width: 40px;
+        height: auto;
     }
 }
