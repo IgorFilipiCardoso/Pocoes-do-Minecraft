@@ -132,6 +132,7 @@ main{
 
 .conhecimentos{
     width: 80%;
+    max-width: 900px;
     height: fit-content;
     margin-top: 40px;
     margin-bottom: 40px;
