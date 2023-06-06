@@ -22,6 +22,7 @@ body{
 
 body::-webkit-scrollbar {
     width: 1em;
+    background-color: rgb(92, 89, 89);
   }
    
 body::-webkit-scrollbar-track {
@@ -30,7 +31,6 @@ body::-webkit-scrollbar-track {
    
 body::-webkit-scrollbar-thumb {
     background-color: rgba(32, 32, 32, 0.719);
-    outline: 1px solid rgb(7, 7, 7);
 }
 
 .tudo{
