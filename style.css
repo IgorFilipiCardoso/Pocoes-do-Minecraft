@@ -8,6 +8,7 @@ html, body{
     padding: 0;
     margin: 0;
     width: 100%;
+    height: max-content;
     overflow: auto;
 }
 
@@ -16,7 +17,6 @@ body{
     background-image: url(images/background.jpg);
     background-attachment: fixed;
     background-position: center;
-    background-repeat: repeat;
     background-size:cover;
 }
 
