@@ -69,9 +69,10 @@ dialog {
   .close-dialog-btn {
     border-radius: 100%;
     border: none;
-    padding: 0.5em;
-    width: 30px;
-    height: 30px;
+    padding: 0.2em;
+    width: 20px;
+    height: 5px;
+    display: flex;flex-wrap: wrap;
   }
   
   dialog::backdrop {
@@ -418,7 +419,7 @@ main{
 @media (max-width: 660px){
     .foto_descricao{
         width: 80px;
-        padding: 0;
+        padding: 10px;
     }
 }
 
